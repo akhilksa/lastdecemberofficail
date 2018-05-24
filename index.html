@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Last December</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+	  $('#homeTab').addClass('active');
+      $("a").on('click', function(event) {
+debugger;
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+			var active = hash.split('#')[1];
+			var clickId = active+'Tab';
+			$('.active').removeClass('active');
+			$('#'+clickId+'').addClass('active');
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }
+		else{
+				$('.active').removeClass('active');
+				$('#homeTab').addClass('active');
+				 $('html, body').animate({
+					scrollTop: $('#home').offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = '#home';
+          });
+		}		// End if
+      });
+    });
+  </script>
+</head>
+<body>
+
+ <div class="nav-wrapper"> <!-- Prevents content jump when navbar becomes fixed -->
+      <nav class="navbar navbar-inverse" role="navigation" style="position:fixed;width:100%;z-index:1000;margin-top:-1%; height:100px;">
+        <div class="container-fluid">
+        
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ldnav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         </div>
+        <div id="logo" class="nav-wrapper"><a href="#"><img src="images/ld-logo1.png" alt="lastDec LOGO"/></a></div>
+        <div class="collapse navbar-collapse" id="ldnav">
+          <ul class="nav navbar-nav" style="float: right;">
+          
+            <li><a href="#" class="tab" id="homeTab">Home</a></li>
+            <li><a href="#videos" class="tab" id="videosTab">Videos</a></li>
+            <!-- <li class="dropdown" class="tab" id="videosTab">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >Videos <span class="caret"></span></a>
+                <ul class="dropdown-menu" id="videoNav" role="menu">
+                  <li><a href="#videos" id="OriginalTab">Original</a></li>
+                  <li><a href="#videos" id="coverTab">Cover</a></li>    
+                </ul>
+            </li> -->
+            <li><a href="#gallery" class="tab" id="galleryTab">Gallery</a></li>
+            <li><a href="#bio" class="tab" id="bioTab">Bio</a></li>
+            <li><a href="#contact" class="tab" id="contactTab">Contact</a></li>
+            
+          </ul>
+
+        </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+ 
+
+
+
+ 
+  <div id="home" class="row">
+    <div class="col-lg-12">
+      <div class="content">
+        <h1>Last December</h1>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+<div class="float-sm">
+  <div class="fl-fl float-fb fb">
+    <i class="fa fa-facebook"></i>
+    <a href="https://www.facebook.com/lastdecemberofficial" target="_blank"> Like us!</a>
+  </div>
+  <div class="fl-fl float-yt yt">
+    <i class="fa fa-youtube-play"></i>
+    <a href="https://www.youtube.com/channel/UCtQ-lUY2FwSy6WNBSRzHdSA" target="_blank"> Subscribe us!</a>
+  </div>
+  <div class="fl-fl float-ig insta">
+    <i class="fa fa-instagram"></i>
+    <a href="https://www.instagram.com/lastdecemberofficial" target="_blank">Follow us!</a>
+  </div>
+  <div class="fl-fl float-tw twit">
+    <i class="fa fa-twitter"></i>
+    <a href="https://www.twitter.com/lastdecofficial"  target="_blank">Follow us!</a>
+  </div>
+  <div class="fl-fl float-sy spot">
+    <i class="fa fa-spotify"></i>
+    <a href="https://open.spotify.com/artist/2bHZyR3wxXX4Rs0HeJDRMO"  target="_blank">Listen to us!</a>
+  </div>
+  <div class="fl-fl float-it it">
+    <i class="fa fa-apple"></i>
+    <a href="https://itunes.apple.com/in/artist/last-december/id1292776979" target="_blank">Listen to us!</a>
+  </div>
+</div>
+
+
+  <div class="videos">
+    <div id="videos" class="jumbotron jumbotron-fluid" >
+      <div class="container">
+          <h2>Videos</h2>
+          <div id="stripe">
+            <button id="oBtn" class="selected vidBtn">Original</button>
+            <button id="cBtn" class="vidBtn">Cover</button>
+          </div>
+          
+          <div class="row" id="originalVideo">
+          <p class="vid"> Last December ft Forget My Silence - With No Tears (Official Video)</p>
+          <div id="my-div">
+            <iframe width="1152" height="648" src="https://www.youtube.com/embed/Cw9tGEt3FG0" frameborder="0" allowfullscreen align="centre"></iframe>
+          </div>
+          </div>
+          <div class="row" id="cv1Video">
+              <p class="vid"> Linkin Park - One More Light (cover)</p>
+              <div id="my-div1">
+                <iframe width="1152" height="648" src="https://www.youtube.com/embed/fnhhYrj0Dw4" frameborder="0" allowfullscreen align="centre"></iframe>
+              </div>
+          </div>
+          <div class="row" id="cv2Video">
+               <p class="vid"> Linkin Park - Crawling (cover) </p>
+              <div id="my-div2">
+                <iframe width="1152" height="648" src="https://www.youtube.com/embed/OPNvn-CuH8Q" frameborder="0" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="row" id="cv3Video" >
+           <p class="vid"> The ChainSmokers and Coldplay - Something Just Like This (cover)</p>
+          <div id="my-div3">
+             <iframe width="1152" height="648" src="https://www.youtube.com/embed/e9i7x2e_nJE" frameborder="0" allowfullscreen></iframe>
+          </div>
+          </div>
+          <div class="row" id="cv4Video" >
+           <p class="vid"> Chris Cornell - Promise (cover)</p>
+          <div id="my-div4">
+             <iframe width="1152" height="648" src="https://www.youtube.com/embed/9QoHE1XGpjE" frameborder="0" allowfullscreen></iframe>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+    
+  
+
+  <hr id="hrgal">
+  
+  <div  class="gallery">
+    <div id="gallery" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h2 >Gallery</h2>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <div class="thumbnail">
+              <img src="images/a.jpg" >
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="thumbnail">
+              <img src="images/b.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="thumbnail">
+              <img src="images/e.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="thumbnail">
+              <img src="images/f.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="thumbnail">
+              <img src="images/c.jpg">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="thumbnail">
+              <img src="images/d.jpg">
+            </div>
+          </div>
+          
+    </div>
+  </div>
+  </div>
+</div>
+  
+  
+
+  <hr id="hrbio">
+  <div id="bio" class="container bio ">
+      <div  class="jumbotron">
+
+        <h2 >Bio</h2>
+        <p>
+        Formed in 2014 Last December is a rock duo from India, consisting of Emil William(Lead Vocals, Guitar) & Gidel Jacob (Bass,Backing Vocals).
+        </p>
+
+        <p> Showing an interest in music at a very young age, they started playing  instruments making songs.
+         Inspired by bands such as Green Day, Linkin Park, Dream Theater, Coldplay, their music goes everywhere from pop to hard rock.</p>
+
+        <p> Currently working on their first EP, the band collaborated with a Russian band, Forget my silence, releasing their first single 'With no tears'.</p>  
+      </div>
+  </div>
+
+  <hr>
+
+</div>
+
+  
+<div id="contact">
+
+        <h2>    Contact Us </h2>
+        <div >
+         <i class="fa fa-envelope" aria-hidden="true"> Email</i> 
+         <h3> lastdecember26@gmail.com</h3> 
+        </div>
+      
+  </div>
+
+
+
+
+<nav id="foot" class="navbar navbar-inverse navbar-bottom">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">© Last December</a>
+    </div>
+
+    
+    <div id="ldfoot">
+    
+      
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="https://www.facebook.com/lastdecemberofficial" target="_blank" class="btn btn-social-icon btn-facebook ">
+              <span class="fa fa-facebook fb"></span>
+               Facebook  </a>
+        </li>
+        <li><a href="https://www.youtube.com/channel/UCtQ-lUY2FwSy6WNBSRzHdSA" target="_blank" class="btn btn-social-icon btn-youtube">
+              <span class="fa fa-youtube-play yt"></span>
+               YouTube  </a>
+        </li>
+        <li><a href=" https://www.instagram.com/lastdecemberofficial" target="_blank" class="btn btn-social-icon btn-instagram">
+              <span class="fa fa-instagram insta"></span>
+               Instagram  </a>
+        </li>
+        <li><a href="https://www.twitter.com/lastdecofficial" target="_blank" class="btn btn-social-icon btn-twitter">
+              <span class="fa fa-twitter twit"></span>
+               Twitter  </a>
+        </li>
+        <li><a href="https://open.spotify.com/artist/2bHZyR3wxXX4Rs0HeJDRMO" target="_blank" class="btn btn-social-icon btn-spotify">
+              <span class="fa fa-spotify spot"></span>
+               Spotify  </a>
+        </li>
+        <li><a href="https://open.spotify.com/artist/2bHZyR3wxXX4Rs0HeJDRMO" target="_blank" class="btn btn-social-icon btn-itunes">
+              <span class="fa fa-apple it"></span>
+               iTunes  </a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+ <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="js/angular.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/lastdecember.js"></script>
+
+
+</body>
+</html>

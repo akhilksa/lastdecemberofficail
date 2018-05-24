@@ -1,0 +1,347 @@
+body {
+    /*background: url(https://images.unsplash.com/photo-1444623151656-030273ddb785?dpr=1&auto=compress,format&fit=crop&w=1650&h=&q=80&cs=tinysrgb&crop=);*/
+    /*background: url(https://images.unsplash.com/photo-1479707341578-d3f239e493d1?dpr=1&auto=compress,format&fit=crop&w=1650&h=&q=80&cs=tinysrgb&crop=);*/
+    background: url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed;
+
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+    color: white;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+.row {
+margin-right: 0px;
+}
+
+.content{
+	padding-top:20%;
+	text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+.navbar-inverse {
+  border:none;
+  background-color: #1e1d18;
+}
+.logoDiv{
+    
+    position: fixed;
+    height: 82px;
+    width: 100%;
+    background: #F0C27B;
+    background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);
+    background: linear-gradient(to right, #191118, #4c2f02);
+    z-index:1000;
+    /*background-image: url("images/tobias-van-schneider-88137.jpg");*/
+}
+.active{
+	font-weight: bold;
+    color: white;
+    border-bottom: 2px solid #f1f1f1;
+}
+.videos{
+    padding-top: 20%;
+    /*margin-top: 10%*/
+    text-align: center;
+}
+#videos{
+	padding-top:10%;
+}
+
+#stripe{
+  background: transparent;
+  height: 25px;
+  text-align: center;
+}
+
+#stripe {
+  height: 40px;
+  text-align: center;
+}
+.vidBtn{
+  border: solid;
+  background: none;
+  width: 65px;
+  height: 100%;
+  font-weight: 700;
+  transition: all 0.3s;
+  outline: none;
+}
+
+
+
+.vidBtn:hover{
+  background: grey;
+}
+
+#gallery{
+	padding-top:9%;
+}
+.vid{
+    padding-top: 2%;
+}
+
+.gallery{
+    padding-top: 2%;
+}
+
+.thumbnail>img{
+    /*width:100%;*/
+    height: 399px;
+}
+
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+p{
+    color:white;
+    font-size: 30px;
+
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;    
+}
+
+.bio {
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 5%;
+
+}
+#bio {
+    width: auto;
+}
+
+.gallery .jumbotron, .videos .jumbotron{
+    background: transparent;
+}
+
+#my-div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#contact{
+	
+}
+iframe{
+     transform: scale(1);
+}
+
+.bio .jumbotron{
+        background-color: rgba(0,0,0,.8);
+}
+
+
+.container {
+    width: 1500px;
+}
+
+
+#foot{
+    margin-bottom: 0px;
+}
+
+#ldnav ul li:selected{
+    border-bottom:2px solid red;
+    text-align: center;
+}
+
+.selected{
+  background: #F0C27B;
+}
+
+#ldnav ul li {
+  font-size: 15px;
+  font-weight: 1100;
+}
+
+#ldnav{
+padding-top: 1%;
+}
+
+.tab{
+  width: 100px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #bd8100;
+} 
+
+.logodiv,#top>.navbar{
+    
+    position: fixed;
+    height: 82px;
+    width: 100%;
+    background: #F0C27B;
+    background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);
+    background: linear-gradient(to right, #433016, #13171e);
+    z-index:1000;
+    /*background-image: url("images/tobias-van-schneider-88137.jpg");*/
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 19px 55px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.navbar-default{
+    border-color: transparent;
+}
+#followDiv{
+    float:right;
+}
+.topAlign{
+    margin-top:1%;
+}
+.fb{
+    color:#3b5998;
+}
+.yt{
+    color:#bb0000;
+}
+.insta{
+    color:#8a3ab9;
+}
+.twit{
+    color:#0084b4;
+}
+
+.spot{
+    color: #1db954
+}
+.it{
+    color: white;
+}
+
+.nav-wrapper{
+    padding-top: 1%;
+}
+
+#logo {
+  display: table-cell;
+  line-height: 0;
+  width: 5.6%;
+  position: fixed;
+}
+
+#logo img {
+  width: 84px;
+  height: 81px;
+  position: fixed;
+  margin-top: 0;
+}
+
+#contact{
+    padding-top: 20px;
+    padding-bottom: 10%;
+    text-align:center;
+}
+
+form, .well {
+    background: rgba(0,0,0,0.5);
+    color:#f4f4f4;
+}
+
+.form-control{
+    background-color: #19160e;
+}
+
+.input-group-addon {
+background-color: #19160e;
+}
+
+#btnContactUs{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+
+
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  background: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 20px;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 5px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+
+.float-fb {
+  top: 160px;
+}
+
+.float-yt {
+  top: 215px;
+}
+
+.float-ig {
+  top: 270px;
+}
+
+.float-tw {
+  top: 325px;
+}
+
+.float-sy {
+  top: 380px;
+}
+
+.float-it {
+  top: 435px;
+}
+/* Floating Social Media Bar Style Ends Here */
+
+
+    
+
+
